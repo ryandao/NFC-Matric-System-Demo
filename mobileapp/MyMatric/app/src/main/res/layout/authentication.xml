@@ -1,0 +1,48 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/logo"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/black"
+        android:gravity="center_horizontal">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/domain_array"
+            android:prompt="@string/domain_spinner_prompt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/matric_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/matric_card_hint"
+                android:layout_weight="0.40"/>
+
+            <Button
+                android:id="@+id/request_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_button"
+                android:onClick="requestAccess" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

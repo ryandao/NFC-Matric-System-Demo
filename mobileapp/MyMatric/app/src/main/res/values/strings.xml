@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyMatric</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="nfc_info_enabled">Congratulations! Now your app can be used as a real Matric card.
+        Place this device up against a reader to see it in action.</string>
+    <string name="nfc_info_disabled">Please turn on Android Beam in order to use the Matric NFC feature.</string>
+    <string name="nfc_info_no">NFC is not available on this device</string>
+    <string name="menu_settings">Android Beam settings</string>
+    <string name="send_button">Send</string>
+    <string name="matric_card_hint">Matric number</string>
+    <string name="verification_hint">Verification number</string>
+    <string name="submit_button">Submit</string>
+    <string name="hceServiceDesc">Host Card Emulation</string>
+    <string name="aiddescription">ACR122U</string>
+    <string name="domain_spinner_prompt">Domain</string>
+
+
+    <string-array name="domain_array">
+        <item>NUSSTU</item>
+        <item>NUSSTF</item>
+        <item>NUSEXT</item>
+    </string-array>
+</resources>
